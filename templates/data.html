@@ -15,26 +15,31 @@
 </head>
 <body>
 
-    <nav class = "navbar-default navbar-fixed-top">
-        <div class = "container-fluid">
-            <div class = "navbar-header">
-                <a href = "/index.html" class="navbar-left"><img src= "../images/alex.png"></a>
-            </div>
-            <ul class= "nav navbar-nav navbar-right">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a href="/templates/index.html" class="navbar-left"><img src="/images/alex.png"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tasks"></span> Plots <span class="caret"></span></a>
-                    <ul class= "dropdown-menu">
-                        <li><a href="/templates/plot1.html">Plot 1</a></li>
-                        <li><a href="/templates/plot2.html">Plot 2</a></li>
-                        <li><a href="/templates/plot3.html">Plot 3</a></li>
-                        <li><a href="/templates/plot4.html">Plot 4</a></li>
-                    </ul>
+                  <ul class="dropdown-menu">
+                    <li><a href="/templates/maxTemp.html">City Latitude vs Max Temperature</a></li>
+                    <li><a href="/templates/humidity.html">City Latitude vs Humidity</a></li>
+                    <li><a href="/templates/cloudiness.html">City Latitude vs Cloudiness</a></li>
+                    <li><a href="/templates/wind.html">City Latitude vs Wind Speed</a></li>
+                  </ul>
                 </li>
                 <li><a href="/templates/comparison.html"><span class="glyphicon glyphicon-transfer"></span> Comparison</a></li>
                 <li><a href="/templates/data.html"><span class="glyphicon glyphicon-stats"></span> Data</a></li>
-            </ul>
-        </div>
-
-    </nav>
+              </ul>
+          </div>
+      </nav>
 
     <div class="container">
         <div class="row" style="padding-top: 75px;">
