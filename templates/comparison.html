@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Plot 1</title>
+  <title>Comparison | HW 11</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    div.border {border-style: solid; border-color: lightgray;border-width: .5px; background-color: white;margin: 15px;}
-    body {background-color:gainsboro;}
-    ul.nav {padding: 5px; }
-    </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 
@@ -41,16 +38,48 @@
           </div>
       </nav>
 
-    <div class="container">
+      <div class="container">
         <div class="row" style="padding-top: 75px;">
           <div class="col-sm-12 border">
-            <h5 style="color: purple; padding:10px;"><a href="/templates/index.html"> < Back to Dashboard</h6></a>      <h3>Visualization Comparisons</h3>
+            <h5 style="color: purple; padding:10px;"><a href="/templates/index.html"> < Back to Dashboard</h6></a> 
+                   <h3>Comparison: Latitude vs X</h3>
             <hr>
-            <p>This will be the description of the page. This will be where you add custom content about what you want to put on the page.
-            </p>
+            <p>Click any plot to get an in-depth analysis.</p>
+            <div class="row">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Max Temperature</div>
+                <a href="/templates/MaxTemp.html">
+                  <img class="panel" src="/images/lat_vs_max_temp.jpg">
+                </a>
+              </div>
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Humidity</div>
+                <a href="/templates/humidity.html">
+                  <img class="panel" src="/images/lat_vs_humidity.jpg">
+                </a>
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Cloudiness</div>
+                <a href="/templates/cloudiness.html">
+                  <img class="panel" src="/images/lat_vs_cloudiness.jpg">
+                </a>
+    
+              </div>
+              <div class="col-lg-6" style="padding: 30px;">
+                <div class="title">vs. Wind Speed</div>
+                <a href="/templates/wind_.html">
+                  <img class="panel" src="/images/lat_vs_wind.jpg">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       
-      </body>
-      </html>
+    
+    
+    </body>
+    </html>

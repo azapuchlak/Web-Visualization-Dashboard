@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Humidity</title>
+  <title>Humidity | HW 11</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    div.border {border-style: solid; border-color: lightgray;border-width: .5px; background-color: white;margin: 15px;}
-    body {background-color:gainsboro;}
-    ul.nav {padding: 5px; }
-    </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 
@@ -42,19 +39,30 @@
   </nav>
 
 
+ 
   <div class="container">
     <div class="row" style="padding-top: 75px;">
       <div class="col-sm-7 border">
         <h3>City Latitude vs Humidity</h3>
         <hr>
-        <img class="viz-preview" src="/images/lat_vs_humidity.jpg">
+        <img class="viz-preview" src="/images/lat_vs_cloudiness.jpg">
         <hr>
         <p>This graph is observing the relationship between City Latitude and Humidity Percentages.
           It seems that higher latitudes - the northern hemisphere - has more diverse percentages of humidity. There is more of a range of temperature, whereas cities with lower latitudes - the southern hemisphere - contains mostly humidity above 60% and did not see humidity below 30%.
         </p>
       </div>
+          <div class="col-sm-4 border">
+            <h3>Visualizations</h3> 
+            <hr>       
+            <h4>City Latitude vs Max Temperature</h4><a href="/templates/MaxTemp.html" class="viz-box"><img class="viz-preview" src="/images/lat_vs_max_temp.jpg"></a>
+            <h4>City Latitude vs Humidity</h4><a href="/templates/humidity.html" class="viz-box"><img class="viz-preview" src="/images/lat_vs_humidity.jpg"></a>
+            <h4>City Latitude vs Cloudiness</h4><a href="/templates/cloudiness.html" class="viz-box"><img class="viz-preview" src="/images/lat_vs_cloudiness.jpg"></a>
+            <h4>City Latitude vs Wind Speed</h4><a href="/templates/wind.html" class="viz-box"><img class="viz-preview" src="/images/lat_vs_wind.jpg"></a>
+            <br><br>
+          </div>
     </div>
   </div>
+
 
     </body>
     </html>
